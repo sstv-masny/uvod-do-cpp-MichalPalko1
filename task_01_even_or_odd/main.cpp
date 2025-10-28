@@ -1,10 +1,16 @@
-
 #include <iostream>
+using namespace std;
+
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    long long n;
-    if (!(std::cin >> n)) return 0;
-    // TODO: print "even" or "odd"
+    int n;
+    cout << "Zadaj cislo: ";
+    cin >> n;
+    if (n % 2 == 0) {
+        cout << "Number is even" << endl;
+    } else {
+        cout << "Number is odd" << endl;
+    }
     return 0;
 }
+
+// This program reads an integer from the user and determines if it is even or odd.
